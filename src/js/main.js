@@ -1,10 +1,8 @@
-const track = document.querySelector(".h-track");
+const hTrack = document.querySelector(".h-track");
 
 window.addEventListener("scroll", () => {
-  const sectionTop = track.parentElement.offsetTop;
-  const scrollPos = window.scrollY - sectionTop;
+  const scrollY = window.scrollY;
 
-  if (scrollPos >= 0) {
-    track.style.transform = `translateX(${-scrollPos}px)`;
-  }
+  // velocidad del movimiento horizontal
+  hTrack.style.transform = `translateX(${-scrollY * 0.6}px)`;
 });
