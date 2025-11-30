@@ -22,8 +22,11 @@ html {
   all: revert;
   display: flex !important;
   flex-direction: row !important;
-  justify-content: flex-start !important;
-  align-items: flex-start !important;
+  /* Habilita desplazamiento horizontal por slides */
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x mandatory !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 /* AÑADIMOS UNA CAPA QUE ANULA TODOS LOS ESTILOS GLOBALES */
@@ -36,23 +39,21 @@ html {
 /* ============================ */
 
 .intro-img {
-  width: 50vw !important;
+  width: 100vw !important;
   height: 100vh !important;
+  flex: 0 0 100vw !important;
   object-fit: cover !important;
   display: block !important;
 
-  /* Elimina cualquier centrado o márgenes heredados */
+  /* Asegura que cada imagen haga 'snap' al inicio del viewport */
+  scroll-snap-align: start !important;
   margin: 0 !important;
   padding: 0 !important;
-  align-self: flex-start !important;
-  object-position: left top !important;
+  object-position: center center !important;
 }
-
-/* Coloca la segunda imagen a la derecha dentro del contenedor horizontal */
-.horizontal-intro .intro-img:nth-child(2) {
-  margin-left: auto !important;
-  align-self: flex-start !important;
-  object-position: right top !important;
+/* Opcional: oculta scrollbars en WebKit (móvil/desktop) conservando scroll */
+.horizontal-intro::-webkit-scrollbar {
+  display: none;
 }
 
 /* ============================ */
