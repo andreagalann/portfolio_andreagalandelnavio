@@ -79,7 +79,6 @@ html {
 .h-track {
   display: flex;
   height: 100%;
-  gap: 40px; /* separación entre imágenes */
   padding-left: 10vw; /* margen inicial suave */
   will-change: transform; /* optimiza el movimiento */
 }
