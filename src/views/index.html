@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+
+    <!-- ARCHIVO CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" herf="layout.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="logo">TU NOMBRE</div>
+
+      <nav class="menu">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <div class="burger" id="burger">☰</div>
+    </header>
+    <!-- INTRO HORIZONTAL SCROLL -->
+    <section class="horizontal-intro">
+      <div class="intro-track">
+        <img src="assets/img/intro/port1_1.jpg" class="intro-item" />
+        <img src="assets/img/intro/port1_2.jpg" class="intro-item" />
+      </div>
+    </section>
+    <section style="height: 200vh"></section>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <h1>Hola, soy <span>Tu Nombre</span></h1>
+      <p>Portfolio personal — Ingeniería · Diseño · Proyectos</p>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="about" class="about">
+      <h2>Sobre mí</h2>
+      <p>Esto es una breve descripción sobre ti. Luego la editamos.</p>
+    </section>
+
+    <!-- =============================== -->
+    <!-- CARRUSEL HORIZONTAL TIPO BRIANNE -->
+    <!-- =============================== -->
+    <section id="projects" class="horizontal-gallery">
+      <div class="h-title">
+        <h2>Proyectos destacados</h2>
+        <p>Selección de trabajos recientes</p>
+      </div>
+
+      <div class="h-wrapper">
+        <div class="h-track">
+          <!-- AÑADE TUS IMÁGENES AQUÍ -->
+          <img src="assets/img/hscroll/img1.jpg" class="h-item" />
+          <img src="assets/img/hscroll/img2.jpg" class="h-item" />
+          <img src="assets/img/hscroll/img3.jpg" class="h-item" />
+          <img src="assets/img/hscroll/img4.jpg" class="h-item" />
+          <img src="assets/img/hscroll/img5.jpg" class="h-item" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="contact">
+      <h2>Contacto</h2>
+      <p>Email: tuemail@gmail.com</p>
+    </section>
+
+    <!-- ARCHIVO JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
